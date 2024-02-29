@@ -2,13 +2,16 @@ equipos = ["Alianza Lima", "Universitario", "Cristal", "Melgar", "Boys", "Cienci
 
 def generar_fixture(n = []):
 
+
     nro_equipos = len(n)
+    equipo_descansa = f'{nro_equipos}'  # Número del equipo ficticio (puedes ajustar esto según tus preferencias)
 
     if len(n) % 2 != 0:
         nro_equipos = len(n) + 1  # Agregar un equipo ficticio (X) si la cantidad de equipos es impar
 
-    equipo_descansa = f'{nro_equipos}'  # Número del equipo ficticio (puedes ajustar esto según tus preferencias)
-    equipos.append(equipo_descansa)
+        equipos.append(equipo_descansa)
+
+
 
     # Generar el fixture
     for i in range(nro_equipos - 1):
